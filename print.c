@@ -3,7 +3,7 @@
 /**
  * _printf - custom implementation of the stdio.h prinf function
  * @format: the formatable string input
- * 
+ *
  * Return: count - int (success), -1 (failure)
  */
 
