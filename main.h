@@ -8,16 +8,26 @@
 int _putchar(char c);
 void _puts(char *s);
 int _printf(const char *format, ...);
-char *print_c(va_list list);
-char *print_s(va_list list);
-char *print_i(va_list list);
+int print_c(va_list list);
+int print_s(va_list list);
+int print_i(va_list i);
+int print_d(va_list d);
+int print_u(va_list u);
+int print_b(va_list b);
+int print_o(va_list o);
+int print_x(va_list x);
+int print_X(va_list X);
+int print_p(va_list p);
+int print_S(va_list S);
+int print_r(va_list r);
+int print_R(va_list R);
 
 
-typedef struct type
+typedef struct print
 {
-	char ch;
-	char *(*print_func)(va_list);
-}print;
+	char *t;
+	int (*print_func)(va_list);
+}print_t;
 
 #endif
 
